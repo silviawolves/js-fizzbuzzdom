@@ -3,11 +3,17 @@
 for (let i = 0; i <= 100; i++) {
 
     if (i % 3 === 0) {
-        const Fizz = (i % 3 === 0)
-        console.log(i, Fizz)
+        let fizz = (i % 3 === 0)
+        fizz = "Fizz"
+        console.log(i, fizz)
     } else if (i % 5 === 0) {
-        const Buzz = (i % 5 === 0)
-        console.log(i, Buzz)
+        let buzz = (i % 5 === 0)
+        buzz = "Buzz"
+        console.log(i, buzz)
+    } else if (i % 3 === 0 && i % 5 === 0) {
+        let fizzBuzz = (i % 3 === 0) && (i % 5 === 0)
+        fizzBuzz = "FizzBuzz"
+        console.log(i, fizzBuzz)
     }
 
 
