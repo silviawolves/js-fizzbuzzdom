@@ -7,6 +7,11 @@
 }
 
 .full-view {
-    height: 100vh;
     background-color: var(--blu-sfondo);
+}
+
+.square {
+    height: 100px;
+    width: 100px;
+    text-align: center;
 }
