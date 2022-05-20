@@ -1,21 +1,26 @@
 "use strict"
 
-for (let i = 0; i <= 100; i++) {
+//creo il conteggio di numeri da 1 a 100
+for (let i = 1; i <= 100; i++) {
+    console.log(i)
 
+    //creo le condizioni e variabili che sostituiscono i multipli di 3 e 5
     if (i % 3 === 0) {
         let fizz = (i % 3 === 0)
         fizz = "Fizz"
-        console.log(i, fizz)
+        console.log(fizz)
     } else if (i % 5 === 0) {
         let buzz = (i % 5 === 0)
         buzz = "Buzz"
-        console.log(i, buzz)
-    } else if (i % 3 === 0 && i % 5 === 0) {
-        let fizzBuzz = (i % 3 === 0) && (i % 5 === 0)
-        fizzBuzz = "FizzBuzz"
-        console.log(i, fizzBuzz)
+        console.log(buzz)
     }
-
+    
+    //creo la condizione e variabile che sostituisce i multipli di 3 e 5
+    if ((i % 3 === 0) && (i % 5 === 0)) {
+        let fizzBuzz = ((i % 3 === 0) && (i % 5 === 0))
+        fizzBuzz = "FizzBuzz"
+        console.log(fizzBuzz)
+    }
 
 }
 

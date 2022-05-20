@@ -1,0 +1,12 @@
+:root {
+    --blu-sfondo: #073B4C;
+    --azzurro-quadrati: #1389B2;
+    --verde-fizz: #0AD6A1;
+    --giallo-buzz: #FFD165;
+    --rosso-fizzbuzz: #F0466F;
+}
+
+.full-view {
+    height: 100vh;
+    background-color: var(--blu-sfondo);
+}
