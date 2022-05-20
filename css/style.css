@@ -13,5 +13,24 @@
 .square {
     height: 100px;
     width: 100px;
-    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: black;
+}
+
+.square-numero {
+    background-color: var(--azzurro-quadrati);
+}
+
+.square-fizz {
+    background-color: var(--verde-fizz);
+}
+
+.square-buzz {
+    background-color: var(--giallo-buzz);
+}
+
+.square-fizzbuzz {
+    background-color: var(--rosso-fizzbuzz);
 }

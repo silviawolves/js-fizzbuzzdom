@@ -13,17 +13,18 @@ for (let i = 1; i <= 100; i++) {
         console.log(fizzBuzz)
         const multiploDoppio = document.querySelector(".row")
         multiploDoppio.innerHTML += `  <div class="col">
-                                            <div class="square">
+                                            <div class="square square-fizzbuzz">
                                                 ${fizzBuzz}
                                             </div>
                                         </div>  `
+        
     } else if (i % 3 === 0) { 
         let fizz = (i % 3 === 0)
         fizz = "Fizz"
         console.log(fizz)
         const multiploTre = document.querySelector(".row")
         multiploTre.innerHTML += `  <div class="col">
-                                        <div class="square">
+                                        <div class="square square-fizz">
                                             ${fizz}
                                         </div>
                                     </div>  `
@@ -33,14 +34,14 @@ for (let i = 1; i <= 100; i++) {
         console.log(buzz)
         const multiploCinque = document.querySelector(".row")
         multiploCinque.innerHTML +=  `  <div class="col">
-                                            <div class="square">
+                                            <div class="square square-buzz">
                                                 ${buzz}
                                             </div>
                                         </div>  `
     } else {
         const centoNumeri = document.querySelector(".row")
         centoNumeri.innerHTML += `  <div class="col">
-                                        <div class="square">
+                                        <div class="square square-numero">
                                             ${i}
                                         </div>
                                     </div>  `
