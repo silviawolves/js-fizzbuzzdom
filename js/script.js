@@ -3,11 +3,15 @@
 //creo il conteggio di numeri da 1 a 100
 for (let i = 1; i <= 100; i++) {
     console.log(i)
-    const centoNumeri = document.querySelector(".lista-numeri")
-    centoNumeri.innerHTML += `<li>${i}</li>`
 
     //creo le condizioni e variabili che sostituiscono i multipli di 3 e 5
-    if (i % 3 === 0) {
+    if ((i % 3 === 0) && (i % 5 === 0)) {
+        let fizzBuzz = ((i % 3 === 0) && (i % 5 === 0))
+        fizzBuzz = "FizzBuzz"
+        console.log(fizzBuzz)
+        const multiploDoppio = document.querySelector(".lista-numeri")
+        multiploDoppio.innerHTML += `<li>${fizzBuzz}</li>`
+    } else if (i % 3 === 0) { 
         let fizz = (i % 3 === 0)
         fizz = "Fizz"
         console.log(fizz)
@@ -19,17 +23,10 @@ for (let i = 1; i <= 100; i++) {
         console.log(buzz)
         const multiploCinque = document.querySelector(".lista-numeri")
         multiploCinque.innerHTML += `<li>${buzz}</li>`
+    } else {
+        const centoNumeri = document.querySelector(".lista-numeri")
+        centoNumeri.innerHTML += `<li>${i}</li>`
     }
-    
-    //creo la condizione e variabile che sostituisce i multipli di 3 e 5
-    if ((i % 3 === 0) && (i % 5 === 0)) {
-        let fizzBuzz = ((i % 3 === 0) && (i % 5 === 0))
-        fizzBuzz = "FizzBuzz"
-        console.log(fizzBuzz)
-        const multiploDoppio = document.querySelector(".lista-numeri")
-        multiploDoppio.innerHTML += `<li>${fizzBuzz}</li>`
-    }
-
 }
 
 
