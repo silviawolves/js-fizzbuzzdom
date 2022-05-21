@@ -1,12 +1,7 @@
 "use strict"
 
-//creo il conteggio di numeri da 1 a 100
 for (let i = 1; i <= 100; i++) {
-    console.log(i)
 
-    //creo le condizioni e variabili che sostituiscono i multipli di 3 || 5
-    // i multipli di tre && 5
-    // se non ci sono multipli
     if ((i % 3 === 0) && (i % 5 === 0)) {
         let fizzBuzz = ((i % 3 === 0) && (i % 5 === 0))
         fizzBuzz = "FizzBuzz"
@@ -17,7 +12,6 @@ for (let i = 1; i <= 100; i++) {
                                                 ${fizzBuzz}
                                             </div>
                                         </div>  `
-        
     } else if (i % 3 === 0) { 
         let fizz = (i % 3 === 0)
         fizz = "Fizz"
@@ -39,6 +33,7 @@ for (let i = 1; i <= 100; i++) {
                                             </div>
                                         </div>  `
     } else {
+        console.log(i)
         const centoNumeri = document.querySelector(".row")
         centoNumeri.innerHTML += `  <div class="col">
                                         <div class="square square-numero">
