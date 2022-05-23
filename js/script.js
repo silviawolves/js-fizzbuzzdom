@@ -4,7 +4,7 @@ for (let i = 1; i <= 100; i++) {
 
     if ((i % 3 === 0) && (i % 5 === 0)) {
         let fizzBuzz = ((i % 3 === 0) && (i % 5 === 0))
-        fizzBuzz = "FizzBuzz"
+        fizzBuzz = "fizzbuzz"
         console.log(fizzBuzz)
         const multiploDoppio = document.querySelector(".row")
         multiploDoppio.innerHTML += `  <div class="col">
@@ -14,7 +14,7 @@ for (let i = 1; i <= 100; i++) {
                                         </div>  `
     } else if (i % 3 === 0) { 
         let fizz = (i % 3 === 0)
-        fizz = "Fizz"
+        fizz = "fizz"
         console.log(fizz)
         const multiploTre = document.querySelector(".row")
         multiploTre.innerHTML += `  <div class="col">
@@ -24,7 +24,7 @@ for (let i = 1; i <= 100; i++) {
                                     </div>  `
     } else if (i % 5 === 0) {
         let buzz = (i % 5 === 0)
-        buzz = "Buzz"
+        buzz = "buzz"
         console.log(buzz)
         const multiploCinque = document.querySelector(".row")
         multiploCinque.innerHTML +=  `  <div class="col">
